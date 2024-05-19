@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
         integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/formulario/styles.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/formulario/styles.css">
 </head>
 
 <body>
@@ -54,39 +54,41 @@
 
         <section class="formulario">
             <div class="formulario__container">
-                <img src="../img/status-1.png" alt="Etapa um de três" class="formulario__etapas">
+                <img src="../assets/img/status-1.png" alt="Etapa um de três" class="formulario__etapas">
                 <h2 class="formulario__titulo-texto">Preencha os campos abaixo para criar sua conta corrente!</h2>
             </div>
 
             <form class="principal__formulario" data-formulario>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="nome">Nome</label>
-                    <input name="nome" id="nome" class="campo__escrita" />
+                    <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" required />
                     <span class="mensagem-erro"></span>
                 </fieldset>
 
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="email">E-mail</label>
-                    <input name="email" id="email" class="campo__escrita" />
+                    <input name="email" id="email" class="campo__escrita" type="email" minlength="4" required />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="rg">RG</label>
-                    <input name="rg" id="rg" class="campo__escrita campo__escrita--menor" />
+                    <input name="rg" id="rg" class="campo__escrita campo__escrita--menor" type="text" required />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
-                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required />
+                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" type="text" minlength="11"
+                        maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="aniversario">Data de nascimento</label>
-                    <input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" />
+                    <input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" type="date"
+                        required />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__termos">
-                    <input name="termos" class="termos__input">
+                    <input name="termos" class="termos__input" type="checkbox" required>
                     <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
                         descrito na Política
                         de
@@ -95,7 +97,7 @@
                 </fieldset>
 
                 <div>
-                    <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar>
+                    <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
                     <span class="mensagem-erro"></span>
                 </div>
             </form>
@@ -150,14 +152,16 @@
         <section class="rodape__redes-sociais">
             <h2 class="rodape__titulo">Acesse nossas redes</h2>
             <ul class="rodape__lista redes-sociais__lista">
-                <li><img src="../img/Facebook.png" alt="ícone do facebook"></li>
-                <li><img src="../img/Youtube.png" alt="ícone do youtube"></li>
-                <li><img src="../img/Whatsapp.png" alt="ícone do whatsapp"></li>
-                <li><img src="../img/Instagram.png" alt="ícone do instagram"></li>
+                <li><img src="../assets/img/Facebook.png" alt="ícone do facebook"></li>
+                <li><img src="../assets/img/Youtube.png" alt="ícone do youtube"></li>
+                <li><img src="../assets/img/Whatsapp.png" alt="ícone do whatsapp"></li>
+                <li><img src="../assets/img/Instagram.png" alt="ícone do instagram"></li>
             </ul>
             <h2 class="rodape__logo"><span class="rodape__logo--negrito">Moni</span>Bank</h2>
         </section>
     </footer>
+
+    <script src="../assets/js/script.js" type="module" defer></script>
 </body>
 
 </html>

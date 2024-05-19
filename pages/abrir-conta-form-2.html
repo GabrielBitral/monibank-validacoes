@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
         integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/formulario/styles.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/formulario/styles.css">
 </head>
 
 <body>
@@ -56,11 +56,11 @@
 
         <section class="formulario">
             <div class="formulario__container">
-                <img src="../img/status-2.png" alt="Etapa dois de três" class="formulario__etapas">
+                <img src="../assets/img/status-2.png" alt="Etapa dois de três" class="formulario__etapas">
                 <h2 class="formulario__titulo-texto">Reconhecimento facial</h2>
                 <p class="formulario__texto">Clique no quadro abaixo para capturarmos uma imagem sua!</p>
 
-                <img src="../img/reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento"
+                <img src="../assets/img/reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento"
                     data-video-botao class="formulario__imagem">
 
                 <div class="formulario__camera" data-camera>
@@ -70,7 +70,7 @@
 
                 <div class="formulario__mensagem" data-mensagem>
                     <canvas width="320" height="240" data-video-canvas></canvas>
-                    <img src="../img/ícone check.png" alt="Ícone de validação" class="formulario__imagem">
+                    <img src="../assets/img/ícone check.png" alt="Ícone de validação" class="formulario__imagem">
                     <p>Prontinho, imagem capturada!</p>
 
                     <a href="#" class="formulario__botao formulario__botao--ancora" data-enviar>Quero abrir minha
@@ -127,14 +127,16 @@
         <section class="rodape__redes-sociais">
             <h2 class="rodape__titulo">Acesse nossas redes</h2>
             <ul class="rodape__lista redes-sociais__lista">
-                <li><img src="../img/Facebook.png" alt="ícone do facebook"></li>
-                <li><img src="../img/Youtube.png" alt="ícone do youtube"></li>
-                <li><img src="../img/Whatsapp.png" alt="ícone do whatsapp"></li>
-                <li><img src="../img/Instagram.png" alt="ícone do instagram"></li>
+                <li><img src="../assets/img/Facebook.png" alt="ícone do facebook"></li>
+                <li><img src="../assets/img/Youtube.png" alt="ícone do youtube"></li>
+                <li><img src="../assets/img/Whatsapp.png" alt="ícone do whatsapp"></li>
+                <li><img src="../assets/img/Instagram.png" alt="ícone do instagram"></li>
             </ul>
             <h2 class="rodape__logo"><span class="rodape__logo--negrito">Moni</span>Bank</h2>
         </section>
     </footer>
+
+    <script src="../assets/js/camera.js" defer></script>
 </body>
 
 </html>
